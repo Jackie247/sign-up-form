@@ -7,6 +7,9 @@ html,body{
     color:var(--font-color);
     height:100%;
 }
+input,label{
+    display:block;
+}
 main{
     display:flex;
     flex-flow:row;
@@ -40,4 +43,10 @@ main{
     flex-flow:column wrap;
     padding: 5rem 2rem;
     width:60vw;
+}
+
+.content-form>form>section{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-evenly;
 }
