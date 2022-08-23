@@ -1,0 +1,12 @@
+:root{
+    --background-color: #f0f5fc;
+}
+body{
+    background-color: var(--background-color);
+}
+.background-img{
+    background-image: url("../images/campfire-background.jpg");
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
