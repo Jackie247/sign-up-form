@@ -1,35 +1,31 @@
 :root{
-    --background-color: #f0f5fc;
+    --background-color: #1A1A1B;
+    --font-color:rgb(215, 218, 220);
 }
 html,body{
     background-color: var(--background-color);
+    color:var(--font-color);
     height:100%;
 }
 main{
     display:flex;
     flex-flow:row;
-    height:100%;
-    width:100%;
 }
 /* Side Bar */
-.side-bar{
-    display:flex;
-    width:40%;
-}
-.sidebar-bg{
+.sidebar{
+    width:40vw;
+    height:100vh;
     /*Jonathan Forage
 @jonathanforage https://unsplash.com/photos/1azAjl8FTnU*/
     background-image: url("../images/campfire-background.jpg");
-    background-attachment:fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-size: 100%;
-    min-height: 100%;
-    min-width: 100%;
+    background-position: center;
 }
 
-.sidebar-logo{
+.sidebar-strip{
     background-image: url("../images/odin-lined.png");
+    position:relative;
     background-attachment:fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,5 +39,5 @@ main{
     display:flex;
     flex-flow:column wrap;
     padding: 5rem 2rem;
-    width:60%;
+    width:60vw;
 }
