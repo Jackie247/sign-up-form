@@ -14,6 +14,10 @@ main{
     display:flex;
     flex-flow:row;
 }
+@font-face {
+    font-family: norse-bold;
+    src: url(./norse-bold.otf);
+}
 /* Side Bar */
 .sidebar{
     width:40vw;
@@ -28,14 +32,21 @@ main{
 }
 
 .sidebar-strip{
-    background-image: url("../images/odin-lined.png");
+    display:flex;
+    flex-flow:row wrap;
     position:relative;
-    background-attachment:fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: 100%;
-    min-height: 100%;
-    min-width: 100%;
+    background-color: #1A1A1B99;
+    top:30vh;
+    padding:1rem 0;
+    font-size: 2em;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-family: norse-bold,sans-serif;
+}
+.sidebar-strip>img{
+    align-self: center;
+    max-width: 13vh;
+    max-height:13vh;
 }
 
 /* Content Right Side */
