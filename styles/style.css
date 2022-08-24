@@ -1,7 +1,9 @@
 :root{
     --background-color: #1A1A1B;
+    --form-background-color: #343436;
     --font-color:rgb(215, 218, 220);
     --sidebar-font:#ffffff;
+    --title-text-size: 18px;
 }
 html,body{
     background-color: var(--background-color);
@@ -42,25 +44,47 @@ main{
     font-size: 2em;
     justify-content: center;
     justify-content: space-evenly;
-    font-family: norse-bold,sans-serif;
     color: var(--sidebar-font);
+}
+
+.sidebar-strip>h3{
+    font-family: norse-bold,sans-serif;
 }
 .sidebar-strip>img{
     align-self: center;
     max-width: 11vh;
     max-height:11vh;
 }
-
 /* Content Right Side */
 .content{
     display:flex;
     flex-flow:column wrap;
-    padding: 5rem 2rem;
     width:60vw;
+    padding: 2em 0;
 }
-
+.content-text{
+    font-size:var(--title-text-size);
+    padding-left: 3em;
+    padding-right: 10em;
+}
+/* Midsection sign up form */
+.midsection{
+    display:flex;
+    flex-flow:column;   
+    background-color: var(--form-background-color);
+    padding:2em 3em;
+    padding-right:10em;
+    height:30vh;
+}
+.midsection>h3{
+    margin:1em 0;
+    margin-top:0;
+}
 .content-form>form>section{
     display:flex;
     flex-flow:row wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    left:0;
+    width:60vh;
+    height:25vh;
 }
