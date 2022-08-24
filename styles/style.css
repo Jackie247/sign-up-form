@@ -17,7 +17,8 @@ main{
 /* Side Bar */
 .sidebar{
     width:40vw;
-    height:100vh;
+    height:100%;
+    min-height:100vh;
     /*Jonathan Forage
 @jonathanforage https://unsplash.com/photos/1azAjl8FTnU*/
     background-image: url("../images/campfire-background.jpg");
