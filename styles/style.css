@@ -4,11 +4,12 @@
     --font-color:rgb(215, 218, 220);
     --accent-color:#bd7819;
     --sidebar-font:#ffffff;
+    --content-font:Signika;
 }
 html,body{
     background-color: var(--background-color);
     color:var(--font-color);
-    font-family:Norse,Verdana,Arial; 
+    font-family:var(--content-font),Verdana,Arial; 
     height:100%;
 }
 input,label{
@@ -19,8 +20,12 @@ main{
     flex-flow:row;
 }
 @font-face {
-    font-family: Norse;
-    src: url(../Norse-Bold.otf);
+    font-family: Signika;
+    src: url(../fonts/Signika-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family:Satisfy;
+    src:url(../fonts/Satisfy-Regular.ttf)
 }
 /* Side Bar */
 .sidebar{
@@ -50,7 +55,7 @@ main{
 }
 
 .sidebar-strip>h3{
-    font-family: norse-bold,sans-serif;
+    font-family: Satisfy,Verdana,Arial; 
 }
 .content-text>h3:nth-child(2), .content-text>h3:nth-child(1){
     margin:0.2em 0;
@@ -93,9 +98,9 @@ main{
     gap:20px;
     width:100%;
 }
-.content-form>form>section>label{
+label{
     width:100%;
-    margin-bottom:1em;
+    margin:0.2em;
 }
 input{
     border: 2px solid var(--accent-color);
