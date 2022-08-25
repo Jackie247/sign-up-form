@@ -3,7 +3,6 @@
     --form-background-color: #343436;
     --font-color:rgb(215, 218, 220);
     --sidebar-font:#ffffff;
-    --title-text-size: 18px;
 }
 html,body{
     background-color: var(--background-color);
@@ -45,10 +44,14 @@ main{
     justify-content: center;
     justify-content: space-evenly;
     color: var(--sidebar-font);
+    max-width: 100%;
 }
 
 .sidebar-strip>h3{
     font-family: norse-bold,sans-serif;
+}
+.content-text>h3:nth-child(2), .content-text>h3:nth-child(1){
+    margin:0;
 }
 .sidebar-strip>img{
     align-self: center;
@@ -63,8 +66,9 @@ main{
     padding: 2em 0;
 }
 .content-text{
-    font-size:var(--title-text-size);
-    padding-left: 3em;
+    padding-top: 10vh;
+    font-size:18px;
+    padding-left: 3vw;
     padding-right: 10em;
 }
 /* Midsection sign up form */
@@ -72,19 +76,26 @@ main{
     display:flex;
     flex-flow:column;   
     background-color: var(--form-background-color);
-    padding:2em 3em;
+    padding:1em 3vw;
     padding-right:10em;
     height:30vh;
+    justify-content: space-evenly;
 }
 .midsection>h3{
-    margin:1em 0;
-    margin-top:0;
+    margin:0;
 }
 .content-form>form>section{
     display:flex;
     flex-flow:row wrap;
     justify-content: space-between;
-    left:0;
+    gap:20px;
     width:60vh;
-    height:25vh;
+}
+.content-form>form>section>label{
+    width:100%;
+    margin-bottom:1em;
+}
+/* Bottom of page */
+.content-acc{
+    padding:1em 3vw;
 }
