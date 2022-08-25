@@ -8,6 +8,7 @@
 html,body{
     background-color: var(--background-color);
     color:var(--font-color);
+    font-family:Norse,Verdana,Arial; 
     height:100%;
 }
 input,label{
@@ -18,8 +19,8 @@ main{
     flex-flow:row;
 }
 @font-face {
-    font-family: norse-bold;
-    src: url(./norse-bold.otf);
+    font-family: Norse;
+    src: url(../Norse-Bold.otf);
 }
 /* Side Bar */
 .sidebar{
@@ -90,16 +91,23 @@ main{
     flex-flow:row wrap;
     justify-content: space-between;
     gap:20px;
-    width:60vh;
+    width:100%;
 }
 .content-form>form>section>label{
     width:100%;
     margin-bottom:1em;
 }
+input{
+    border: 2px solid var(--accent-color);
+    border-radius: 0.4em;
+    width:20vw;
+}
 /* Bottom of page */
 .content-acc{
     margin-top:2em;
     padding:1em 3vw;
+    font-weight:bold;
+    color: var(--font-color);
 }
 .content-acc>button{
     display: inline-block;
@@ -111,4 +119,16 @@ main{
     font-size: 20px;
     text-align: center;
     text-decoration: none;
+    border-radius: 0.3em;
+    width:12vw;
+}
+
+.content-acc a{
+    font-weight:bolder;
+    color:var(--accent-color);
+    text-decoration: none;
+}
+.content-acc a:visited{
+    color:var(--accent-color);
+    font-weight:bolder;
 }
