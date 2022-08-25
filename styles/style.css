@@ -137,7 +137,10 @@ input:focus{
     border-radius: 0.3em;
     width:12vw;
 }
-
+.content-acc>p{
+    margin-top:2em;
+    font-size:22px;
+}
 .content-acc a{
     font-weight:bolder;
     color:var(--accent-color);
