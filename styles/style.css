@@ -99,13 +99,21 @@ main{
     width:100%;
 }
 label{
+    position:relative;
     width:100%;
     margin:0.2em;
 }
 input{
+    position:relative;
     border: 2px solid var(--accent-color);
     border-radius: 0.4em;
     width:20vw;
+}
+input:focus{
+    outline: none !important;
+    border:2px solid #dddedf;
+    box-shadow: 0 0 10px #afbac7;
+
 }
 /* Bottom of page */
 .content-acc{
