@@ -87,6 +87,8 @@ main{
     padding-right:10em;
     height:30vh;
     justify-content: space-evenly;
+    box-shadow: 2.5px 0.25em 5px 1px #afbac722;
+
 }
 .midsection>h3{
     margin:0;
