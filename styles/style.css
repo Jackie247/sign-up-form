@@ -46,8 +46,8 @@ main{
     position:relative;
     background-color: #1A1A1B99;
     top:30vh;
-    padding:0 10rem;
-    font-size: 2em;
+    padding:0 15rem;
+    font-size: 2.7em;
     justify-content: center;
     justify-content: space-evenly;
     color: var(--sidebar-font);
