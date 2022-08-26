@@ -26,38 +26,38 @@
             <div class="midsection">
                 <h3>Let's do this!</h3>
                 <div class="content-form">
-                    <form action="#" method="post">
+                    <form action="#" method="post" id="form">
                         <section>
                             <div>
                                 <label for="first-name">FIRST NAME</label>
-                                <input type="name" id="first-name" name="first-name">
+                                <input type="name" id="first-name" name="first-name" required minlength="2" maxlength="20">
                             </div>
                             <div>
-                                <label for="first-name">LAST NAME</label>
-                                <input type="name" id="last-name" name="last-name">
+                                <label for="last-name">LAST NAME</label>
+                                <input type="name" id="last-name" name="last-name" required minlength="2" maxlength="20">
                             </div>
                             <div>
-                                <label for="first-name">EMAIL</label>
-                                <input type="email" id="email" name="email">
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email" name="email" required minlength="7 "maxlength="30">
                             </div>
                             <div>
                                 <label for="phone-num">PHONE NUMBER</label>
-                                <input type="number" id="phone-num" name="phone-num">
+                                <input type="tel" id="phone-num" name="phone-num" required minlength="11" maxlength="11">
                             </div>
                             <div>
                                 <label for="pswd">PASSWORD</label>
-                                <input class="error" type="password" id="pswd" name="pswd">
+                                <input class="error" type="password" id="pswd" name="pswd" required minlength="8" maxlength="30">
                             </div>
                             <div>
                                 <label for="pswd-conf">CONFIRM PASSWORD</label>
-                                <input class="error" type="password" id="pswd-conf" name="pswd-conf">
+                                <input class="error" type="password" id="pswd-conf" name="pswd-conf" required minlength="8" maxlength="30">
                             </div>
                         </section>
                     </form>
                 </div>
             </div>
             <div class="content-acc">
-                <button type="submit">Create Account</button>
+                <button type="submit" form="form" value="">Create Account</button>
                 <p>Already have an account? <a href>Log in.</a></p>
             </div>
         </div>

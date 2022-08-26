@@ -136,6 +136,7 @@ input:focus{
     text-decoration: none;
     border-radius: 0.3em;
     width:12vw;
+    cursor:pointer;
 }
 .content-acc>p{
     margin-top:2em;
