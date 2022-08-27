@@ -117,6 +117,9 @@ input:focus{
     box-shadow: 0 0 10px #afbac7;
 
 }
+input:valid {
+    border-color: green;
+}
 /* Bottom of page */
 .content-acc{
     margin-top:2em;
